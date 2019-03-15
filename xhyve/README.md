@@ -25,6 +25,6 @@ xhyve is an x86 virtualisation tool based on the FreeBSD virtualisation tool bhy
   - Perform install with script Lcreate_on_macOS.sh using ideas from the install.sh script of Set up xhyve with Ubuntu 16.04 (we use mkfile to efficiently create a “disk” image). After downloading, run it via 
       bash Lcreate_on_macOS.sh
   - The system can now be run with script Lrun.sh which displays NFS server examples, and preloads a terminal cut buffer (pbcopy) with useful NFS client and general commands. After downloading, run it via 
-      bash Lrun.sh -h # shows definitions provided in terminal copy buffer
-      bash Lrun.sh
+    - bash Lrun.sh -h # shows definitions provided in terminal copy buffer
+    - bash Lrun.sh
   - Note: the Lrun.sh script enables X11 access from any client on the 192.168.64 subnet, so that a predefined DISPLAY value on the client will support X11 clients and even startlxde. It is assumed that you will only have internal systems using this IP number range.
