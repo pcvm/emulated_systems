@@ -19,9 +19,9 @@ xhyve is an x86 virtualisation tool based on the FreeBSD virtualisation tool bhy
     - brew update 
     - brew install –HEAD xhyve
   - I keep xhyve emulated system files in $HOME/local/xhyve so to match, do 
-      mkdir -p $HOME/local/xhyve ; cd $HOME/local/xhyve
+    - mkdir -p $HOME/local/xhyve ; cd $HOME/local/xhyve
   - Download a consistent set of current install files into a subdirectory called boot using script Lget_files.sh (based on ideas from this Makefile). After downloading, run it via 
-      bash Lget_files.sh
+    - bash Lget_files.sh
   - Perform install with script Lcreate_on_macOS.sh using ideas from the install.sh script of Set up xhyve with Ubuntu 16.04 (we use mkfile to efficiently create a “disk” image). After downloading, run it via 
       bash Lcreate_on_macOS.sh
   - The system can now be run with script Lrun.sh which displays NFS server examples, and preloads a terminal cut buffer (pbcopy) with useful NFS client and general commands. After downloading, run it via 
