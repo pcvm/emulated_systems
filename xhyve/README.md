@@ -1,6 +1,9 @@
 # xhyve emulated systems
 
-xhyve is an x86 virtualisation tool based on the FreeBSD virtualisation tool bhyve.
+xhyve is an x86 virtualisation tool based on the FreeBSD virtualisation tool bhyve. It can be installed using Homebrew for macOS.
+
+* Pre-requisite: homebrew
+  - See URL https://brew.sh/ for Homebrew install instructions
 
 * Running FreeBSD on macOS
   - Running FreeBSD on OSX https://dan.langille.org/2018/10/02/running-freebsd-on-osx-using-xhyve-a-port-of-bhyve/ (Oct-2018)
@@ -23,7 +26,7 @@ xhyve is an x86 virtualisation tool based on the FreeBSD virtualisation tool bhy
   - Download a consistent set of current install files into a subdirectory called boot using script Lget_files.sh (based on ideas from this Makefile). After downloading, run it via 
     - bash Lget_files.sh
   - Perform install with script Lcreate_on_macOS.sh using ideas from the install.sh script of Set up xhyve with Ubuntu 16.04 (we use mkfile to efficiently create a “disk” image). After downloading, run it via 
-      bash Lcreate_on_macOS.sh
+    - bash Lcreate_on_macOS.sh
   - The system can now be run with script Lrun.sh which displays NFS server examples, and preloads a terminal cut buffer (pbcopy) with useful NFS client and general commands. After downloading, run it via 
     - bash Lrun.sh -h # shows definitions provided in terminal copy buffer
     - bash Lrun.sh
