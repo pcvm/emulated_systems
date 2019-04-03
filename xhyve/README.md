@@ -2,6 +2,8 @@
 
 xhyve is an x86 virtualisation tool based on the FreeBSD virtualisation tool bhyve. It can be installed using Homebrew for macOS.
 
+(1) Emulating ubuntu linux
+
 * Pre-requisite: homebrew
   - See URL https://brew.sh/ for Homebrew install instructions
 
