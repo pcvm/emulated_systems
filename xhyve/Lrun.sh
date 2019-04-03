@@ -40,7 +40,7 @@ sudo mount -t nfs -o nolock,rw 192.168.64.1:/Users/'${MYID}'/Desktop/no_backups 
 # *** Linux Shutdown command (preloaded to paste buffer as alias halt) ***
 sudo halt
 '
-echo "alias mnthost='sudo mount -t nfs -o nolock,rw 192.168.64.1:/Users/${MYID}/Desktop/no_backups /mnt && df /mnt' ; alias halt='sudo halt' ; alias ty=more ; echo ; echo df ; df ; echo ; date ; echo ; alias ; export DISPLAY=${emuDIS} ; echo DISPLAY=\$DISPLAY" | pbcopy -
+echo "alias mnthost='sudo mount -t nfs -o nolock,rw 192.168.64.1:/Users/${MYID}/Desktop/no_backups /mnt && df /mnt' ; alias mntlocal='(cd ~; mkdir -p local; sudo mount -t nfs -o nolock,rw 192.168.64.1:/Users/${MYID}/local ./local && df ./local)' ; alias halt='sudo halt' ; alias ty=more ; alias cls='stty sane ; stty dec -decctlq ; clear' ; alias df='df -H' ; alias du='du -k' ; alias e='emacs -nw' ; alias d='ls -al' ; alias dds='ls -Flao' ; alias fetch='curl -OR' ; alias h='history 28' ; echo ; echo df ; df ; echo ; date ; echo ; alias ; export DISPLAY=${emuDIS} ; echo DISPLAY=\$DISPLAY ; export TERM=xterm-256color ; resize" | pbcopy -
 
 echo '****************************************'
 echo "Preloading Terminal paste buffer:"
